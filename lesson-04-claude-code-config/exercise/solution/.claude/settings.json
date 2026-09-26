@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(sample-tickets/**)",
+      "Read(kb/**)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(secrets/**)",
+      "Read(config/credentials.json)",
+      "WebFetch",
+      "Bash(rm:*)",
+      "Bash(curl:*)",
+      "Write(config/**)",
+      "Write(secrets/**)"
+    ]
+  },
+  "env": {
+    "TICKET_SYSTEM": "support-tickets",
+    "LOG_LEVEL": "info"
+  }
+}
