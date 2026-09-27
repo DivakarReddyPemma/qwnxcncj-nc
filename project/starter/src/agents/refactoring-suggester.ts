@@ -13,6 +13,6 @@ export const refactoringSuggester: AgentDefinition = {
     'better design patterns. Use this agent whenever a pull request needs suggestions for ' +
     'improving code structure and maintainability.',
   model: 'inherit',
-  tools: ['Read', 'Grep', 'Glob'],
+  tools: ['Read', 'Grep', 'Glob', 'Skill'],
   prompt: refactoringSuggesterPrompt
 };

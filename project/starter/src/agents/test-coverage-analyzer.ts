@@ -12,6 +12,6 @@ export const testCoverageAnalyzer: AgentDefinition = {
     'classes, branches, and edge cases, and suggests specific tests to add. Use this agent ' +
     'whenever a pull request needs a review of how well the changed files are tested.',
   model: 'inherit',
-  tools: ['Read', 'Grep', 'Glob'],
+  tools: ['Read', 'Grep', 'Glob', 'Skill'],
   prompt: testCoverageAnalyzerPrompt
 };
